@@ -1,0 +1,157 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: none;
+    /*centrar*/
+    display: flex;
+    justify-content: center;
+    /**/
+    background-image: url(../assets/images/fondo.avif);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem;
+
+    max-width: 1200px;
+    width: 1200px;
+    background-color: rgb(121, 198, 231);
+}
+
+.visor__configuracion,
+.visor__puntuaciones,
+.jugada,
+.visor__jugada,
+.visor__opciones,
+.caja__btn-reinicio,
+.caja__mensaje{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+    padding: 1rem;
+    margin: 1rem;
+
+    font-size: 1.8rem;
+
+    border: 2px solid blue;
+    border-radius: 10px;
+
+    width: 100%;
+}
+
+.visor__puntuaciones{
+    justify-content: space-around;
+}
+
+.visor__puntuaciones__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.visor__jugada{
+    width: 600px;
+    height: 400px;
+
+    flex-direction: column;
+}
+
+.jugada{
+    border: none;
+}
+
+.visor__opciones{
+    justify-content: space-around;
+}
+
+.config__txt,
+.btn__jugar{
+    width: 200px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+
+    background-color: #efefef;
+
+    font-weight: bold;
+    text-align: center;
+}
+.imagen_jugador,
+.imagen_maquina,
+.opcion__box-img{
+    width: 150px;
+    border: 3px solid black;
+    border-radius: 5px;
+
+    background-color: #afafaf;
+}
+
+.imagen_jugador,
+.imagen_maquina{
+    display: none;
+}
+
+
+
+/*clase para ocultar*/
+
+
+.ocultar{
+    display: none;
+}
+
+/*clase para mostrar*/
+.mostrar{
+    display: flex;
+}
+
+/* clase boton reinicio */
+
+.caja__btn-reinicio{
+    border: none;
+}
+
+.btn__reinicio{
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    background-color: rgba(0, 47, 255, 0.7);
+    color: black;
+    border: 3px solid black;
+    border-radius: 5px;
+
+}
+
+/* clases para el mensaje de vistoria / perdida */
+
+.caja__mensaje{
+    border: none;
+}
+
+.victoria,
+.perdida{
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    color: black;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.victoria{
+    background-color: rgba(172, 255, 47, 0.700);
+}
+
+.perdida{
+    background-color: rgba(255, 99, 71, 0.700);
+}
