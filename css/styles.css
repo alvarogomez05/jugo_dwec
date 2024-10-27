@@ -11,7 +11,25 @@ body{
     display: flex;
     justify-content: center;
     /**/
-    background-image: url(../assets/images/fondo.avif);
+    background-image: url(../assets/images/FONDO.png);
+    background-size: 125%;
+    
+    animation-name: fondo;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-direction: alternate;
+}
+
+@keyframes fondo {
+
+    from{
+        background-position: top right;
+    }
+
+    to{
+        background-position: bottom left;
+    }
+
 }
 
 .container{
@@ -44,7 +62,9 @@ body{
 
     font-size: 1.8rem;
 
-    border: 2px solid blue;
+    background-color: rgb(35, 35, 255);
+
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 10px;
 
     width: 100%;
