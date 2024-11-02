@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: none;
+    /*centrar*/
+    display: flex;
+    justify-content: center;
+    /**/
+    background-image: url(../assets/images/FONDO.png);
+    background-size: 125%;
+
+    animation-name: fondo;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-direction: alternate;
+}
+
+@keyframes fondo {
+
+    from {
+        background-position: top right;
+    }
+
+    to {
+        background-position: bottom left;
+    }
+
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10rem;
+}
+
+/* formulario */
+
+
+.form {
+    background-color: #ffffff;
+    border: 2px solid var(--azul);
+    width: 500px;
+    padding: 30px;
+    border-radius: 6px;
+}
+
+.header {
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+    color: var(--azul);
+    margin: 0 0 1rem 0;
+}
+
+.login__error {
+    color: red;
+}
+
+.ocultar {
+    display: none;
+}
+
+.mostrar {
+    display: flex;
+}
+
+.field {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.field {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+.login__link {
+    text-align: center;
+    margin-top: 0.2rem;
+    font-size: 0.9rem;
+}
+
+.field input,
+.field button {
+    height: 85%;
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 6px;
+}
+
+.field input {
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid var(--azul);
+    color: var(--azul);
+}
+
+.field input:focus {
+    background-color: var(--azul-fondo);
+    font-weight: 600;
+    border: 2px solid var(--azul);
+}
+
+.field input::placeholder {
+    color: var(--azul);
+}
+
+.text__pass{
+    color: var(--azul);
+    text-align: right;
+}
+
+.login__register{
+    text-decoration: none;
+    color: var(--azul);
+}
+
+.button{
+    background-color: var(--azul-fondo);
+}
+
+
+:root {
+    --azul: rgb(0, 132, 255);
+    --azul-fondo : rgba(0, 132, 255, 0.216);
+}

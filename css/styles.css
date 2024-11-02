@@ -41,7 +41,7 @@ body{
 
     max-width: 1200px;
     width: 1200px;
-    background-color: rgb(121, 198, 231);
+    background-color: var(--azul-fondo);
 }
 
 .visor__configuracion,
@@ -62,9 +62,9 @@ body{
 
     font-size: 1.8rem;
 
-    background-color: rgb(35, 35, 255);
+    background-color: white;
 
-    border: 2px solid rgb(0, 0, 0);
+    border: 2px solid var(--azul);
     border-radius: 10px;
 
     width: 100%;
@@ -140,7 +140,7 @@ body{
 /* clase boton reinicio */
 
 .caja__btn-reinicio{
-    border: none;
+    border: 2px solid var(--azul);
 }
 
 .btn__reinicio{
@@ -150,13 +150,12 @@ body{
     color: black;
     border: 3px solid black;
     border-radius: 5px;
-
 }
 
 /* clases para el mensaje de vistoria / perdida */
 
 .caja__mensaje{
-    border: none;
+    border: 2px solid var(--azul);
 }
 
 .victoria,
@@ -174,4 +173,9 @@ body{
 
 .perdida{
     background-color: rgba(255, 99, 71, 0.700);
+}
+
+:root {
+    --azul: rgb(0, 132, 255);
+    --azul-fondo : rgba(0, 132, 255, 0.216);
 }

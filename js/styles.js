@@ -63,7 +63,7 @@ const ElegirJugada = (event) => {
 }
 
 const imagenMaquina = () => {
-    imagen_maquina.src = "./assets/images/" + imagenes[Math.floor(Math.random() * imagenes.length)];
+    imagen_maquina.src = "../assets/images/" + imagenes[Math.floor(Math.random() * imagenes.length)];
     imagen_maquina.style.display = "block";
 }
 

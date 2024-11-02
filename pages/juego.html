@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pierda papel tijera</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- configurador -->
+        <form class="visor__configuracion" id="visor__configuracion">
+            <p class="config__txt" value="1">1 PARTIDA</p>
+            <p class="config__txt" value="3">3 PARTIDAS</p>
+            <p class="config__txt" value="5">5 PARTIDAS</p>
+        </form>
+        <!-- nomres y puntuaciones -->
+        <section class="visor__puntuaciones" id="visor__puntuaciones">
+            <div class="visor__puntuaciones__box">
+                <p class="nombre">Maquina: </p>
+                <span class="puntos" id="puntos_maquina">0</span>
+            </div>
+            <div class="visor__puntuaciones__box">
+                <p class="nombre">Jugador: </p>
+                <span class="puntos" id="puntos_jugador">0</span>
+            </div>
+        </section>
+        <!-- aqui se verá el mensaje final -->
+         <section class="caja__mensaje" id="caja__mensaje">
+
+         </section>
+        <!-- aqui se veran las imagenes -->
+        <section class="visor__jugada" id="visor__jugada">
+            <p class="resultado" id="resultado"></p>
+            <div class="jugada">
+                <article class="visor__jugada-maquina" id="visor__jugada-juggador">
+                    <img src="" alt="" class="imagen_maquina" id="imagen_maquina">
+                </article>
+                <article class="visor__jugada-juggador" id="visor__jugada-juggador">
+                    <img src="" alt="" class="imagen_jugador" id="imagen_jugador">
+                </article>
+            </div>
+        </section>
+        <!-- imagenes a eleguir por el jugador -->
+        <section class="visor__opciones" id="visor__opciones">
+            <article class="opcion__box">
+                <img src="../assets/images/papel.png" alt="" class="opcion__box-img">
+                <img src="../assets/images/piedra.png" alt="" class="opcion__box-img">
+                <img src="../assets/images/tijera.png" alt="" class="opcion__box-img">
+            </article>
+            <article class="opcion__box">
+                <p class="btn__jugar" id="btn__jugar">JUGAR</p>
+            </article>
+        </section>
+
+        <!-- aqui se creará el boton para tener una nueva partida -->
+
+        <section class="caja__btn-reinicio" id="caja__btn-reinicio">
+            <!-- <p class="btn__reinicio">aaaaaaaaa</p> -->
+        </section>
+
+
+
+    </div>
+    <script src="../js/styles.js"></script>
+</body>
+
+</html>
