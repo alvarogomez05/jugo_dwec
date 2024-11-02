@@ -59,11 +59,13 @@ const ElegirJugada = (event) => {
     if (opcion.tagName = "IMG") {
         imagen_jugador.src = opcion.src;
         imagen_jugador.style.display = "block";
+        imagen_jugador.classList.add("animation2");
     }
 }
 
 const imagenMaquina = () => {
     imagen_maquina.src = "../assets/images/" + imagenes[Math.floor(Math.random() * imagenes.length)];
+    imagen_maquina.classList.add("animation")
     imagen_maquina.style.display = "block";
 }
 
@@ -210,10 +212,17 @@ const Jugar = () => {
 
 }
 
+const resetAnimation = () => {
+    imagen_maquina.classList.remove("animation");
+    imagen_jugador.classList.remove("animation2");
+}
+
 /* eventos */
 
 document.addEventListener("DOMContentLoaded", ocultadoInicial);
 visor__configuracion.addEventListener("click", Configuracion);
 visor__opciones.firstElementChild.addEventListener("click", ElegirJugada);
 btn__jugar.addEventListener("click", Jugar);
-caja__btn.addEventListener("click", ReiniciarPartida)
+caja__btn.addEventListener("click", ReiniciarPartida);
+imagen_maquina.addEventListener("animationend",resetAnimation);
+

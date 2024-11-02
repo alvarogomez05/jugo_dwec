@@ -1,9 +1,8 @@
-
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     overflow: none;
@@ -13,7 +12,7 @@ body{
     /**/
     background-image: url(../assets/images/FONDO.png);
     background-size: 125%;
-    
+
     animation-name: fondo;
     animation-iteration-count: infinite;
     animation-duration: 10s;
@@ -22,17 +21,17 @@ body{
 
 @keyframes fondo {
 
-    from{
+    from {
         background-position: top right;
     }
 
-    to{
+    to {
         background-position: bottom left;
     }
 
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -50,13 +49,13 @@ body{
 .visor__jugada,
 .visor__opciones,
 .caja__btn-reinicio,
-.caja__mensaje{
+.caja__mensaje {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    
+
     padding: 1rem;
     margin: 1rem;
 
@@ -70,34 +69,34 @@ body{
     width: 100%;
 }
 
-.visor__puntuaciones{
+.visor__puntuaciones {
     justify-content: space-around;
 }
 
-.visor__puntuaciones__box{
+.visor__puntuaciones__box {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-.visor__jugada{
+.visor__jugada {
     width: 600px;
     height: 400px;
 
     flex-direction: column;
 }
 
-.jugada{
+.jugada {
     border: none;
 }
 
-.visor__opciones{
+.visor__opciones {
     justify-content: space-around;
 }
 
 .config__txt,
-.btn__jugar{
+.btn__jugar {
     width: 200px;
     height: 50px;
     border: 2px solid black;
@@ -108,9 +107,10 @@ body{
     font-weight: bold;
     text-align: center;
 }
+
 .imagen_jugador,
 .imagen_maquina,
-.opcion__box-img{
+.opcion__box-img {
     width: 150px;
     border: 3px solid black;
     border-radius: 5px;
@@ -119,7 +119,7 @@ body{
 }
 
 .imagen_jugador,
-.imagen_maquina{
+.imagen_maquina {
     display: none;
 }
 
@@ -128,22 +128,22 @@ body{
 /*clase para ocultar*/
 
 
-.ocultar{
+.ocultar {
     display: none;
 }
 
 /*clase para mostrar*/
-.mostrar{
+.mostrar {
     display: flex;
 }
 
 /* clase boton reinicio */
 
-.caja__btn-reinicio{
+.caja__btn-reinicio {
     border: 2px solid var(--azul);
 }
 
-.btn__reinicio{
+.btn__reinicio {
     padding: 1rem 2rem;
     font-size: 2rem;
     background-color: rgba(0, 47, 255, 0.7);
@@ -154,12 +154,12 @@ body{
 
 /* clases para el mensaje de vistoria / perdida */
 
-.caja__mensaje{
+.caja__mensaje {
     border: 2px solid var(--azul);
 }
 
 .victoria,
-.perdida{
+.perdida {
     padding: 1rem 2rem;
     font-size: 2rem;
     color: black;
@@ -167,15 +167,60 @@ body{
     border-radius: 5px;
 }
 
-.victoria{
+.victoria {
     background-color: rgba(172, 255, 47, 0.700);
 }
 
-.perdida{
+.perdida {
     background-color: rgba(255, 99, 71, 0.700);
 }
 
+/*animacion*/
+
+.animation {
+    opacity: 0;
+    animation-name: animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes animation {
+
+    from {
+        opacity: 0;
+        transform: translateX(-800px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.animation2{
+    opacity: 0;
+    animation-name: animation2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animation2 {
+
+    from {
+        opacity: 0;
+        transform: translateX(800px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/*colores*/
+
 :root {
     --azul: rgb(0, 132, 255);
-    --azul-fondo : rgba(0, 132, 255, 0.216);
+    --azul-fondo: rgba(0, 132, 255, 0.216);
 }
