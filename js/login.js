@@ -4,7 +4,7 @@ let login_password = document.getElementById("login_password");
 
 let login__error__user = document.getElementById("login__error_user");
 let login__error__psswd = document.getElementById("login__error_psswd");
-let login__error = document.getElementById("login__error");
+let login__error = document.getElementById("login_error");
 
 let boolean = true;
 let boolean2 = true;
@@ -59,9 +59,6 @@ const numCaracteres = (user,password) => {
     }
 }
 
-const FalloLogin = () => {
-    login__error.classList.add("mostrar")
-}
 
 
 // Login de Usuarios
@@ -88,10 +85,10 @@ const loginUser = (event) => {
                 login_username.value="";
                 location.href ="./pages/juego.html";
             }else{
-                FalloLogin();
+                login__error.classList.add("mostrar")
             }
     }else{
-        FalloLogin();
+        login__error.classList.add("mostrar")
     }
 }
 
