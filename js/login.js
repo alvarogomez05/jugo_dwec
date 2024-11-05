@@ -1,3 +1,4 @@
+//varables
 
 let login_username = document.getElementById("login_username");
 let login_password = document.getElementById("login_password");
@@ -6,13 +7,15 @@ let login__error__user = document.getElementById("login__error_user");
 let login__error__psswd = document.getElementById("login__error_psswd");
 let login__error = document.getElementById("login_error");
 
+//variables booleanas
 let boolean = true;
 let boolean2 = true;
 
+//array donde se encuentran las credenciales validas
 let users = ["alvaro gomez"];
 let passwords = ["alvarogomez"];
 
-
+//comprobamos la cadena vacia de los valores
 const cadenaVacia = (user, password) => {
     if (user === "") {
         //usuario vacio 
@@ -39,6 +42,7 @@ const cadenaVacia = (user, password) => {
     }
 }
 
+//comprobamos el numeor de caracteres de los valores introducidos
 const numCaracteres = (user,password) => {
     if (user.length <= 8 || user.length >= 30) {
         login_username.style.backgroundColor = "rgba(255, 99, 71, 0.577)";
@@ -80,7 +84,7 @@ const loginUser = (event) => {
     for (let resgitro of users) {
         if (resgitro === user) {
             let posicion = users.indexOf(user);
-            // validamos que la contraseña este dentro del array 
+            // validamos que la contraseña este dentro del array y en la misma posicion que el nombre
             if (passwords[posicion] === password) {
                 login_password.value=""; 
                 login_username.value="";

@@ -1,4 +1,6 @@
 
+//variables
+
 let singup_username = document.getElementById("singup_username");
 let singup_password = document.getElementById("singup_password");
 let singup_age = document.getElementById("singup_age");
@@ -10,6 +12,7 @@ let singup__error__age = document.getElementById("singup__error_age");
 let singup__error__name = document.getElementById("singup__error_name");
 let singup__error = document.getElementById("singup_error");
 
+//varuables booleanas para comprobar si no hay ningun error
 let boolean = true;
 let boolean2 = true;
 let boolean3 = true;
@@ -17,6 +20,7 @@ let boolean4 = true;
 let boolean5 = true;
 let boolean6 = true;
 
+//comprobar si la cadena esta vacia
 const cadenaVacia = (user, password, name) => {
     if (user === "") {
         //usuario vacio 
@@ -54,7 +58,7 @@ const cadenaVacia = (user, password, name) => {
         boolean6 = true;
     }
 }
-
+//comprobar el numero de caracteres de los valores
 const numCaracteres = (user, password) => {
     if (user.length <= 8 || user.length >= 30) {
         singup_username.style.backgroundColor = "rgba(255, 99, 71, 0.577)";
@@ -79,7 +83,7 @@ const numCaracteres = (user, password) => {
     }
 }
 
-// podria compara la cadena vacia de la edad en el metodo cadenaVacia()
+// podria comparar la cadena vacia de la edad en el metodo cadenaVacia()
 // pero lo haremos en este metodo para vacilitar la validacion final
 // para pasar al juego.
 const comprobarEdad = (edad) => {
@@ -125,6 +129,7 @@ const singupUser = (event) => {
     //comprobar la edad
     comprobarEdad(edad);
 
+    //si no hay errores en la validacion pasamos al juego
     if (boolean && boolean2 && boolean3 && boolean4 && boolean5 && boolean6) {
         location.href = "./juego.html";
     }

@@ -62,7 +62,7 @@ body {
     align-items: center;
     gap: 1rem;
 
-    padding: 1rem;
+    padding: 0.3rem;
     margin: 1rem;
 
     font-size: 1.8rem;
@@ -117,7 +117,7 @@ body {
 .imagen_jugador,
 .imagen_maquina,
 .opcion__box-img {
-    width: 150px;
+    width: 100px;
     border: 3px solid black;
     border-radius: 5px;
 
