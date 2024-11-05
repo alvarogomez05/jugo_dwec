@@ -72,6 +72,7 @@ const loginUser = (event) => {
     //comprobar si es una cadena vacia
     cadenaVacia(user, password);
 
+    //comprobar el numero de caracteres tras comprobar la cadena vacia
     if(boolean || boolean2){
         numCaracteres(user,password);
     }

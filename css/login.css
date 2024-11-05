@@ -1,5 +1,11 @@
+@font-face {
+    font-family: font;
+    src: url(../assets/font/Tiny5/Tiny5-Regular.ttf);
+}
+
 * {
     box-sizing: border-box;
+    font-family: font;
 }
 
 body {

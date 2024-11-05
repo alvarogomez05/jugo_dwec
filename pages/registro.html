@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Formualario de Login -->
+      <section class="form" id="singup">
+        <form id="form_singup" action="#" novalidate>
+          <p class="header">Sing up</p>
+          <!-- name -->
+          <div class="field">
+            <input class="input" id="singup_name" type="text" placeholder="Nombre" />
+          </div>
+          <!-- mensaje de erro -->
+          <p class="login__error ocultar" id="singup__error_name"></p>
+          <!-- age -->
+          <div class="field">
+            <input class="input" id="singup_age" type="text" placeholder="Edad" />
+          </div>
+          <!-- Mensaje de error -->
+          <p class="login__error ocultar" id="singup__error_age"></p>
+          <!-- user login -->
+          <div class="field">
+            <input class="input" id="singup_username" type="text" placeholder="Usuario" />
+          </div>
+          <!-- Mensaje de error-->
+          <p class="login__error ocultar" id="singup__error_user"></p>
+
+          <!-- Password login -->
+          <div class="field">
+            <input class="input" id="singup_password" type="password" autocomplete placeholder="************" />
+          </div>
+          <!-- Mensaje de error -->
+          <p class="login__error ocultar" id="singup__error_psswd"></p>
+
+          
+          <p class="text__pass">
+            8-16 caracteres, mayúsculas, minúsculas, números y símbolos.
+          </p>
+
+          <div class="field">
+            <button class="button" type="submit" id="singup_btn">Sing up</button>
+          </div>
+        </form>
+
+        <div class="login__link">
+          <span>Si ya tienes cuenta...
+            <a class="login__register" id="singup_register" href="../index.html">Login</a></span>
+        </div>
+      </section>
+    </div>
+</body>
+    <script src="../js/singup.js"></script>
+</html>
